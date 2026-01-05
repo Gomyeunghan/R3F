@@ -2,6 +2,7 @@ import { Canvas } from "@react-three/fiber";
 import "./App.css";
 import { OrbitControls } from "@react-three/drei";
 import LightTest from "./LightTest";
+import InteractionTest from "./InteractionTest";
 // import MaterialTest from "./MaterialTest";
 
 function App() {
@@ -17,11 +18,12 @@ function App() {
         }}
       >
         <color attach={"background"} args={["black"]}></color>
-        <LightTest />
+        <InteractionTest />
+        {/* <LightTest /> */}
         {/* <MaterialTest /> */}
         <OrbitControls />
-        {/* <axesHelper args={[6]} />
-        <gridHelper args={[10, 10]} /> */}
+        <axesHelper args={[6]} />
+        <gridHelper args={[10, 10]} />
       </Canvas>
     </>
   );
